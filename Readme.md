@@ -1,17 +1,11 @@
 
 # Robot Framework
 
-
 ```mermaid
-    flowchart LR
-    0((start))
-    1{get_transaction_data}
-    2[process_data]
-    3[[end]]
-    0-->1
-    1-->|True|2
-    1-->|False|3
-    2-->1
+graph LR
+  A --- B
+  B-->C[fa:fa-ban forbidden]
+  B-->D(fa:fa-spinner);
 ```
 
 
