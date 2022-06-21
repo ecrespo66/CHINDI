@@ -1,7 +1,7 @@
 
 # Robot Framework
 
-# FLOW CHART Example
+
 ```mermaid
 flowchart LR
 0((start))
