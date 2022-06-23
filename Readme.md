@@ -1,21 +1,3 @@
-
-# FLOW CHART Example
-```mermaid
-flowchart LR
-0((start))
-1{get_transaction_data}
-2[process_data]
-3[[end]]
-0-->1
-1-->|True|2
-1-->|False|3
-2-->1
-```
-
-
-
-
-
 # Robot Framework
 
 Robot-framework is an RPA frame written in Python, it is designed for an easy and fast development of RPA automations.
@@ -93,6 +75,23 @@ To instance Nodes classes and register them in the flow.
 1. Nodes: Nodes class that contains the nodes of the flow read more in flow.py .
 2. parents: *optional - Defines the ancestors of the current node in the flow.
 3. condition: *optional - Defines the condition of the current node for conditional nodes.
+
+
+
+# FLOW CHART Example
+You can generate a visual workflow running python manage.py generateflow
+```mermaid
+flowchart LR
+0((start))
+1{get_transaction_data}
+2[process_data]
+3[[end]]
+0-->1
+1-->|True|2
+1-->|False|3
+2-->1
+```
+
 
 
 **BusinessException & SystemException**
